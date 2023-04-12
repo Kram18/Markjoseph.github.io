@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="<meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name= "viewport" content = "width = device-width, initial-scale = 1.0">
+     <title>Personal Portfolio Website</title>
+     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/11.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <ion-icon class="fas" name="close-outline"></ion-icon>
+            </ul>
+            <ion-icon class="ma" name="menu-outline" onclick="closemenu()"></ion-icon>
+        </nav>
+        <div class="header-text" onclick="openmenu()">
+            <p> <span>BSIT</span>  Student</p>
+            <h1>Hi, I'm <span>Mark </span><br> Joseph  From Philippines</h1>
+        </div>
+    </div>    
+    </div>
+    <!-----------about---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/aboutmeme.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! My name is Mark Joseph Gordovez, 
+                        and I am currently a college student pursuing a Bachelor 
+                        of Science and Information Technology degree. 
+                        I am passionate about understanding the WEB Developing and 
+                        Game Developer, and I'm excited to be studying a subject that I love. 
+                       Overall, I'm passionate about Information Technology and the BSIT world, 
+                       and I'm excited to be pursuing a degree in a field that I love. 
+                       I'm looking forward to continuing to explore and learn in this area and 
+                       making a positive impact in the field of WEB Developer and Game Developer. 
+
+                       <br> And I am interested to write Spoken word Poetry!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills" >
+                        <ul>
+                            <li><span>Gamer</span><br>Online Games</li>
+                            <li><span>Editor</span><br>Video Editor</li>
+                            <li><span>Spoken Poetry</span><br>Write Spoken Poetry</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience" >
+                        <ul>
+                            <li><span>2020- current</span><br>Studying</li>
+                            <li><span>2019-2020</span><br>Video & Music Editor </li>
+                            <li><span>2019- Current</span><br>Write Spoken Poetry</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education" >
+                        <ul>
+                            <li><span>2021- Current</span><br>MinSU</li>
+                            <li><span>2014-2015</span><br>NMHS</li>
+                            <li><span>2007-2008</span><br>Tito B. Herrera</li>
+                        </ul>
+                    </div>
+                </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--    -----------------Portfolio-------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio </h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/wrk-1.png">
+                    <div class="layer">
+                        <h3>My Family</h3>
+                        <p>My Family picture I LOVE my Family. My family is always happy. </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/wrk-2.png">
+                    <div class="layer">
+                        <h3>My Work</h3>
+                        <p>My work is Fishing if I have vication. And I love fishing because thats my job when I have vication. </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/wrk-3.png">
+                    <div class="layer">
+                        <h3>My Talent</h3>
+                        <p>My Talent is to create Spoken Word Poetry. Create Spoken is so very hard because you have to think before you write in the paper.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-------------contact------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><ion-icon name="send-outline"></ion-icon>contact: markjosephggordovez18@gmail.com </p>
+                <p><ion-icon name="call-outline"></ion-icon>09456139910</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/kramjospeh.gordovez">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                    <a href="https://www.instagram.com/kramjospeh/">
+                        <ion-icon name="logo-instagram"> </ion-icon>
+                    </a>
+                    <a href="https://t.me/Mjgg_qq">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </a>
+                    <a href="tiktok.com/@mj.oseph">
+                        <ion-icon name="logo-tiktok"></ion-icon>
+                    </a>
+                    <a href="https://discord.gg/2eaEdGTb">
+                        <ion-icon name="logo-discord"></ion-icon>
+                    </a>
+                </div>
+                <a href="images/lipad.pdf" download class="btn btn2">Download </a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+
+
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
+    <!--<div class="copyright">
+        
+        <button class="facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="currentColor" class="facebook" viewBox="0 0 50 45" style="width: 80px; height: 80px;">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+          </svg>
+        </button>
+        <i class="icofont-facebook"></i>-->
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
